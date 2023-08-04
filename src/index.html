@@ -3,60 +3,90 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Critterville Zoo</title>
+    <title>Critterville</title>
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <header>
-      <a class="logo" href="#">Critterville Zoo</a>
+      <a class="logo" href="#">Critterville</a>
       <nav>
-        <a href="">link one</a>
-        <a href="">link two</a>
-        <a href="">link three</a>
+        <a href="">Explore</a>
+        <a href="">Events</a>
+        <a href="">Conservation</a>
       </nav>
     </header>
     <main>
-      <div id="hero">
-        <video poster="./assets/bg/monkey-bg-poster.jpg" autoplay loop muted>
-          <source
-            src="./assets/bg/monkey-bg-video-540.webm"
-            type="video/webm"
-          />
-          <source src="./assets/bg/monkey-bg-video-540.mp4" type="video/mp4" />
-        </video>
-        <span class="hero-cta">
-          <h1>This website is awesome</h1>
-          <p>This website has info that is going here.</p>
+      <video
+        class="hero-vid"
+        poster="./assets/bg/monkey-bg-poster.jpg"
+        autoplay
+        loop
+        muted
+      >
+        <source src="./assets/bg/monkey-bg-video-540.webm" type="video/webm" />
+        <source src="./assets/bg/monkey-bg-video-540.mp4" type="video/mp4" />
+      </video>
+      <div class="hero">
+        <section class="hero-cta">
+          <h1>Welcome to Critterville!</h1>
+          <p>
+            Discover Critterville, where you can immerse yourself in captivating
+            animal encounters, exclusive tours, and vibrant events. Join us in
+            our commitment to wildlife conservation and embark on an inspiring
+            journey to ignite your love for the natural world.
+          </p>
           <button class="btn-main">Sign Up</button>
-        </span>
+        </section>
         <img class="hero-img" src="./assets/imgs/animal-1.jpg" />
       </div>
       <section class="info-wrapper">
-        <h2>Some Random Information</h2>
-        <div class="content-cards">
+        <h2>Explore the Wonders of Our Zoo</h2>
+        <section class="content-cards">
           <a href="">
-            <img />
-            <p>this is some subtext under an image</p>
+            <img src="./assets/imgs/animal-4.jpg" />
+            <p>
+              Explore the exciting world of events at our zoo! From interactive
+              animal demonstrations to themed family weekends, there's always
+              something happening.
+            </p>
           </a>
           <a href="">
-            <img />
-            <p>this is some subtext under an image</p>
+            <img src="./assets/imgs/animal-2.jpg" />
+            <p>
+              Ever wondered what goes on behind closed doors? Join our exclusive
+              behind-the-scenes tours and get a glimpse of the zoo from a
+              keeper's perspective.
+            </p>
           </a>
           <a href="">
-            <img />
-            <p>this is some subtext under an image</p>
+            <img src="./assets/imgs/animal-3.jpg" />
+            <p>
+              Discover our latest conservation efforts, such as the successful
+              breeding program for endangered species or our partnership with
+              local organizations to restore natural habitats.
+            </p>
           </a>
           <a href="">
-            <img />
-            <p>this is some subtext under an image</p>
+            <img src="./assets/imgs/animal-5.jpg" />
+            <p>
+              Dive into the world of some of our most captivating residents,
+              from the mischievous capuchin monkeys to the regal Bengal tigers.
+              Explore their natural habitats, behaviors, and fascinating facts.
+            </p>
           </a>
-        </div>
+        </section>
       </section>
       <div class="testimony">
         <p>
-          fake testimony to go here about the zoo. maybe have a few that rotate
-          through -name
+          <em
+            >"Visiting Critterville Zoo was a delight for both me and my kids.
+            The interactive exhibits and engaging animal encounters kept us
+            entertained and educated throughout the day. We left with smiles on
+            our faces and a newfound respect for the incredible creatures that
+            call Critterville home."</em
+          >
         </p>
+        <p><b>- Emily Anderson</b></p>
       </div>
       <div class="cta">
         <h4>Call to action</h4>
