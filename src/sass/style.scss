@@ -139,7 +139,7 @@ header {
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.8rem;
     margin-bottom: 2rem;
     color: $green;
   }
@@ -147,7 +147,7 @@ header {
   .content-cards {
     display: flex;
     flex-direction: column;
-    gap: 2rem;
+    gap: 3rem;
 
     img {
       border: 2px solid $brown;
