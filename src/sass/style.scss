@@ -1,9 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,200;0,400;0,600;0,800;1,200;1,400;1,600;1,800&display=swap");
 
 $green: #36b736;
+$light-green: #f1fff1;
 $gold: #ffde25;
 $brown: #4d2508;
-$cream: #f5f5f5;
+$light-gray: #f5f5f5;
 
 * {
   padding: 0;
@@ -13,7 +14,7 @@ $cream: #f5f5f5;
 
 body {
   font-family: "Poppins", sans-serif;
-  background-color: $cream;
+  background-color: $light-gray;
 }
 
 a {
@@ -24,6 +25,15 @@ p {
   font-size: 1.1rem;
   font-weight: 400;
   color: $brown;
+}
+
+.card-wrap {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 0.7rem;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  padding: 1.6rem;
+  overflow: hidden;
 }
 
 // Button styling
@@ -52,7 +62,7 @@ header {
   gap: 10px;
   width: 100%;
   padding: 1rem 0.5rem;
-  background-color: rgba(240, 240, 240, 0.8);
+  background-color: rgba(241, 255, 241, 0.9);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   z-index: 10;
 
@@ -81,30 +91,29 @@ header {
   }
 }
 
-// Background video
-.hero-vid {
-  z-index: -1;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-}
-
 // Hero section
 .hero {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  background-color: rgba(255, 255, 255, 0.6);
-  border-radius: 0.5rem;
-  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
-    rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
-  overflow: hidden;
-  margin: 1.6rem;
+  // Background video
+  .hero-vid {
+    z-index: -1;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
 
   .hero-cta {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(241, 255, 241, 0.9);
+    border-radius: 0.5rem;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    overflow: hidden;
+    margin: 1.6rem;
     text-align: center;
     padding: 0.8rem 0.8rem 0 0.8rem;
 
@@ -132,15 +141,15 @@ header {
 
 // Information content cards
 .info-wrapper {
-  background-color: $cream;
-  padding: 1.6rem;
+  background-color: $light-green;
+  padding: 4rem 1.6rem;
   position: relative;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 
   h2 {
     font-size: 1.8rem;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     color: $green;
   }
 
@@ -166,5 +175,23 @@ header {
       color: $gold;
       border-color: $gold;
     }
+  }
+}
+
+// Testimony section
+.testimony {
+  padding: 4rem 1.6rem;
+  background: url("/assets/imgs/animal-6.jpg") no-repeat center;
+  background-color: #36b736;
+  background-size: cover;
+
+  p {
+    color: $green;
+    text-align: justify;
+  }
+
+  .name {
+    margin-top: 0.7rem;
+    text-align: right;
   }
 }

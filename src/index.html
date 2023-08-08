@@ -19,20 +19,22 @@
     </header>
 
     <main>
-      <!-- Background video -->
-      <video
-        class="hero-vid"
-        poster="./assets/bg/monkey-bg-poster.jpg"
-        autoplay
-        loop
-        muted
-      >
-        <source src="./assets/bg/monkey-bg-video-540.webm" type="video/webm" />
-        <source src="./assets/bg/monkey-bg-video-540.mp4" type="video/mp4" />
-      </video>
-
       <!-- Hero content section; First call to action -->
       <div class="hero">
+        <!-- Background video -->
+        <video
+          class="hero-vid"
+          poster="./assets/bg/monkey-bg-poster.jpg"
+          autoplay
+          loop
+          muted
+        >
+          <source
+            src="./assets/bg/monkey-bg-video-540.webm"
+            type="video/webm"
+          />
+          <source src="./assets/bg/monkey-bg-video-540.mp4" type="video/mp4" />
+        </video>
         <section class="hero-cta">
           <h1>Welcome to Critterville!</h1>
           <p>
@@ -42,8 +44,8 @@
             journey to ignite your love for the natural world.
           </p>
           <button class="btn-main">Sign Up</button>
+          <img class="hero-img" src="./assets/imgs/animal-1.jpg" />
         </section>
-        <img class="hero-img" src="./assets/imgs/animal-1.jpg" />
       </div>
 
       <!-- Informational content cards section -->
@@ -87,16 +89,18 @@
 
       <!-- Testimony section -->
       <div class="testimony">
-        <p>
-          <em
-            >"Visiting Critterville Zoo was a delight for both me and my kids.
-            The interactive exhibits and engaging animal encounters kept us
-            entertained and educated throughout the day. We left with smiles on
-            our faces and a newfound respect for the incredible creatures that
-            call Critterville home."</em
-          >
-        </p>
-        <p><b>- Emily Anderson</b></p>
+        <section class="card-wrap">
+          <p>
+            <em
+              >"Visiting Critterville was a delight for both me and my kids. The
+              interactive exhibits and engaging animal encounters kept us
+              entertained and educated throughout the day. We left with smiles
+              on our faces and a newfound respect for the incredible creatures
+              that call Critterville home."</em
+            >
+          </p>
+          <p class="name"><b>- Emily Anderson</b></p>
+        </section>
       </div>
 
       <!-- Second call to action -->
