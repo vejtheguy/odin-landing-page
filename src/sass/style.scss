@@ -73,14 +73,33 @@ h2 {
 header {
   display: flex;
   flex-direction: column;
-  position: sticky;
+  position: fixed;
   top: 0;
   gap: 10px;
   width: 100%;
   padding: 1rem 0.5rem;
   background-color: rgba(241, 255, 241, 0.9);
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   z-index: 10;
+
+  .header-curve {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+
+    svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 1.3px);
+      height: 29px;
+    }
+
+    .shape-fill {
+      fill: rgba(241, 255, 241, 0.9);
+    }
+  }
 
   .logo {
     color: $green;
@@ -109,6 +128,8 @@ header {
 
 // Hero section
 .hero {
+  margin-top: 8rem;
+
   // Background video
   .hero-vid {
     z-index: -1;
@@ -123,9 +144,10 @@ header {
   .hero-cta {
     display: flex;
     justify-content: center;
+    align-items: center;
     flex-direction: column;
     text-align: center;
-    padding: 3.5rem 1.6rem;
+    padding: 2rem 1.6rem;
     gap: 2rem;
 
     h1 {
@@ -140,23 +162,48 @@ header {
     button {
       color: $light-gray;
       border-color: $light-gray;
-      text-transform: uppercase;
     }
   }
+
+  .filter-wrap {
+    filter: drop-shadow(0 -0.6rem 1rem rgba(0, 0, 0, 0.5));
+  }
+
   .hero-img {
     object-fit: cover;
     height: 400px;
     width: 100%;
+    clip-path: ellipse(100% 95% at 50% 100%);
   }
 }
 
 // Information content cards
 .info-wrapper {
   background-color: $light-green;
-  padding: 4rem 1.6rem;
+  padding: 2rem 1.6rem;
   position: relative;
   text-align: center;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+  .info-wave-top {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+    svg {
+      position: relative;
+      display: block;
+      width: calc(110% + 1.3px);
+      height: 30px;
+    }
+    .shape-fill {
+      fill: $light-green;
+    }
+  }
 
   .content-cards {
     display: flex;
@@ -186,7 +233,7 @@ header {
 
 // Testimony section
 .testimony {
-  padding: 4rem 1.6rem;
+  padding: 6rem 1.6rem;
   background: url("/assets/imgs/animal-6.jpg") no-repeat center;
   background-color: #36b736;
   background-size: cover;
