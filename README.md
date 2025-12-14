@@ -1,8 +1,12 @@
 # Odin Landing Page
 
-This project is a practice landing page created as part of **The Odin Project** curriculum.
+This project is a practice landing page created as part of [**The Odin Project**](https://www.theodinproject.com/lessons/foundations-landing-page) curriculum.
 
 The goal of this assignment was to practice building a basic landing page layout using **HTML and CSS**, focusing on structure, layout, and styling rather than functionality.
+
+[Live preview](https://vejtheguy.github.io/odin-landing-page/)
+
+[![Landing page preview](./imgs/Odin%20Landing%20Page%20Project%20Screenshot.png)](https://vejtheguy.github.io/odin-landing-page/)
 
 ## Overview
 
